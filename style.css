@@ -1,0 +1,264 @@
+.container{
+
+	top: 60px;
+	    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+::-webkit-scrollbar { 
+    width: 0; 
+}
+
+h2{
+
+	background: rgba(0,200,200,1);
+	font-size: 24px;
+	box-shadow: 0 0 3px 1px rgba(0,0,0,0.6);
+
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: rgb(255,255,255);
+	z-index: 1000;
+	opacity:0.99;
+}
+
+.navbar{
+
+	background: rgba(0,200,200,1);
+	box-shadow: 0 0 3px 1px rgba(0,0,0,1);
+}
+.jumbotron{
+
+	box-shadow: 0 0 3px 1px rgba(0,0,0,0.6);
+	background: white;
+	margin-top:-18px; 
+	z-index: 0;
+}
+
+.modal-dialog{
+
+	box-shadow: 0 0 3px 1px rgba(0,0,0,0.6);	
+}
+
+.modal-content{
+
+	max-height: 60%;
+}
+
+.navbar-toggle{
+ background: white;
+}
+
+.modal-body{
+
+max-height: 60%;
+}
+
+.glyphicon.glyphicon-align-justify{
+
+	color:black;
+}
+
+.nav.navbar-nav li a {
+
+    color: white;
+    font-size: 18px;
+}
+
+#photo{
+
+
+	margin: 25px;
+}
+
+ .modal-dialog{
+    max-height: 50%;
+}
+
+.highlight{
+
+	position: absolute;
+	top:60px;
+}
+
+.highlight.ng-hide  {
+
+  transition:0.7s linear all;
+  opacity:0;
+  
+} 
+
+.highlight  {
+	
+   -webkit-animation: NAME-YOUR-ANIMATION 0.7s ; /* Safari 4+ */
+  -moz-animation:    NAME-YOUR-ANIMATION 0.7s ; /* Fx 5+ */
+  -o-animation:      NAME-YOUR-ANIMATION 0.7s ; /* Opera 12+ */
+  animation:         NAME-YOUR-ANIMATION 0.7s; /* IE 10+, Fx 29+ */ 
+} 
+
+@keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; top:0;}
+  1%   { opacity: 0; top:50%;}
+  100% { opacity: 1; top:40px;}
+}
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; top:0;}
+  1%   { opacity: 0; top:50%;}
+  100% { opacity: 1; top:40px;}
+}
+@-moz-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; top:0;}
+  1%   { opacity: 0; top:50%;}
+  100% { opacity: 1; top:40px;}
+}
+@-o-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; top:0;}
+  1%   { opacity: 0; top:50%;}
+  100% { opacity: 1; top:40px;}
+}
+
+.animate-repeat.ng-enter {
+    -webkit-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+
+    opacity: 0;
+    -webkit-transform:scale(1.15)!important;
+    transform:scale(1.15)!important;
+}
+
+.animate-repeat.ng-enter.ng-enter-active{
+
+	    -webkit-transform:scale(1)!important;
+    transform:scale(1)!important;
+    opacity:1;
+}
+
+.animate-repeat.ng-leave {
+    
+    
+        -webkit-transition:0.5s linear  all;
+    transition:0.5s linear all;
+
+    opacity:1;
+}
+
+.animate-repeat.ng-leave.ng-leave-active {     
+
+
+    opacity:0;
+}
+
+/**
+ * Stagger Leave (hide) animation
+ */
+.animate-repeat.ng-leave-stagger {
+    /* this will have a 100ms delay between each successive leave animation */
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+
+    /* in case the stagger doesn't work then these two values
+     must be set to 0 to avoid an accidental CSS inheritance */
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+/**
+ * Stagger ENTER ANIMATION
+ */
+.animate-repeat.ng-enter-stagger {
+    /* this will have a 100ms delay between each successive enter animation */
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+
+    /* in case the stagger doesn't work then these two values
+     must be set to 0 to avoid an accidental CSS inheritance */
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+
+
+
+@keyframes toRepeatAnim {
+
+  0%   { opacity: 0; left:50%;}
+  100% { opacity: 1; left:0;}
+}
+@-webkit-keyframes toRepeatAnim {
+  0%   { opacity: 0; left:50%;}
+  100% { opacity: 1; left:0;}
+}
+@-moz-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; top:0;}
+  1%   { opacity: 0; top:50%;}
+  100% { opacity: 1; top:40px;}
+}
+@-o-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; top:0;}
+  1%   { opacity: 0; top:50%;}
+  100% { opacity: 1; top:40px;}
+}
+
+
+
+
+ @media (max-width: 1210px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+.comments{
+
+	background: rgba(230,230,230,1);
+	margin-top: 10px;
+	
+	font-size: 18px;
+	box-shadow: 0 0 1px 0px rgba(0,0,0,0.5);
+left 0;
+  -webkit-animation: toRepeatAnim 2s; /* Safari 4+ */
+  -moz-animation:    toRepeatAnim 2s; /* Fx 5+ */
+  -o-animation:      toRepeatAnim 2s; /* Opera 12+ */
+  animation:         toRepeatAnim 2s; /* IE 10+, Fx 29+ */ 
+}
+
+ul{
+
+	list-style: none;
+}
